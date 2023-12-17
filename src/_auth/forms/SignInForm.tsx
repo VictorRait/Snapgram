@@ -45,6 +45,7 @@ function SignInForm() {
 			email: values.email,
 			password: values.password,
 		});
+
 		if (!session) return toast({title: "Sign up failed. Please try again. "});
 		const isLoggedIn = await checkAuthUser();
 
