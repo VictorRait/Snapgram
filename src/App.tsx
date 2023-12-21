@@ -20,6 +20,9 @@ function App() {
 				{/* private routes */}
 				<Route element={<RootLayout />}>
 					<Route index element={<Home />} />
+					<Route path="/explore" element={<Explore />} />
+					<Route element={<Home />} />
+					<Route element={<Home />} />
 				</Route>
 			</Routes>
 			<Toaster />
